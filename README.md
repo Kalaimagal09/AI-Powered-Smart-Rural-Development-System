@@ -1,6 +1,6 @@
 # AI-Powered Smart Rural Development System in India (2022-2025)
 
-### 📊 A Comprehensive 5-Phase Data Analytics Capstone Project[cite: 1]
+### 📊 A Comprehensive 5-Phase Data Analytics Capstone Project
 
 ## 📝 Project Overview
 This project leverages advanced data analytics to monitor and evaluate rural development indicators across India without the use of predictive machine learning models[cite: 1]. By consolidating fragmented datasets, the system extracts actionable insights regarding infrastructure growth, agricultural productivity, and social indicators[cite: 1]. The end result is a highly interactive, AI-enhanced Power BI dashboard designed for real-time policy evaluation and executive decision-making[cite: 1].
