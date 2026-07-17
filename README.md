@@ -15,27 +15,27 @@ This project leverages advanced data analytics to monitor and evaluate rural dev
 ## 🏗️ Project Architecture & Methodology
 The data pipeline was engineered across five distinct phases to ensure mathematical validity and structural integrity[cite: 1]:
 
-### Phase 1: Advanced Excel Modeling[cite: 1]
+### Phase 1: Advanced Excel Modeling
 * Merged massive datasets covering rural employment (MGNREGA), agriculture, and infrastructure[cite: 1].
 * Utilized array formulas to calculate per capita income growth and nested logic to classify villages into development tiers[cite: 1].
 * Simulated the economic impact of a 10% increase in internet penetration using the Scenario Manager[cite: 1].
 
-### Phase 2: Relational Data Management (SQL)[cite: 1]
+### Phase 2: Relational Data Management (SQL)
 * Designed a relational database structure and utilized Window functions to dynamically rank districts by healthcare access[cite: 1].
 * Executed Recursive CTEs to trace year-over-year rural development progress and deployed GROUPING SETS for hierarchical analysis[cite: 1].
 * Engineered stored procedures to automate quarterly development reporting[cite: 1].
 
-### Phase 3: Automated Data Wrangling (Python)[cite: 1]
+### Phase 3: Automated Data Wrangling (Python)
 * Automated the data cleaning pipeline using Pandas to normalize units, remove duplicates, and detect mathematical anomalies[cite: 1].
 * Applied NLP Regular Expressions (Regex) to extract critical development keywords (e.g., "sanitation", "irrigation") from government reports[cite: 1].
 * Generated interactive geographic and time-series visualizations using Seaborn and Plotly[cite: 1].
 
-### Phase 4: Statistical Inference (Data Science)[cite: 1]
+### Phase 4: Statistical Inference (Data Science)
 * Conducted rigorous statistical hypothesis testing to validate data relationships[cite: 1].
 * Performed Chi-square tests to prove the association between healthcare access and literacy[cite: 1].
 * Executed ANOVA testing to compare agricultural productivity across states and calculated the Gini coefficient to measure regional inequality[cite: 1].
 
-### Phase 5: Interactive Dashboard Deployment (Power BI)[cite: 1]
+### Phase 5: Interactive Dashboard Deployment (Power BI)
 * Architected a Star Schema data model connecting the employment, agriculture, and infrastructure tables[cite: 1].
 * Authored custom DAX measures to create dynamic indicators, such as the overall Development Index and Electrification Ratio[cite: 1].
 * Deployed an AI-driven Decomposition Tree visual to automatically conduct root-cause analysis on regional development gaps[cite: 1].
