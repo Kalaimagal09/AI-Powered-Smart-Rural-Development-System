@@ -1,4 +1,4 @@
-# AI-Powered Smart Rural Development System in India (2022-2025)[cite: 1]
+# AI-Powered Smart Rural Development System in India (2022-2025)
 
 ### 📊 A Comprehensive 5-Phase Data Analytics Capstone Project[cite: 1]
 
@@ -47,5 +47,5 @@ The data pipeline was engineered across five distinct phases to ensure mathemati
 
 ## 👨‍💻 Author
 **Kalai Magal**  
-*Data Analyst & Software Developer*  
-📧 kalaimagalg9ds@gmail.com
+*Data Analyst*  
+📧 kalaimagal250905@gmail.com
