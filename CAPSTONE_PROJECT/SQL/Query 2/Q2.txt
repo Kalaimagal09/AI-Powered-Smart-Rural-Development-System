@@ -1,0 +1,6 @@
+SELECT 
+    District,
+    SUM(Primary_Health_Centres) AS Total_Health_Centres,
+    RANK() OVER (ORDER BY SUM(Primary_Health_Centres) DESC) AS Healthcare_Rank
+FROM rural_data
+GROUP BY District;

@@ -1,0 +1,21 @@
+WITH District_Stats AS (
+    -- Step 1: Calculate the average unemployment for every district
+    SELECT 
+        State,
+        District,
+        ROUND(AVG(Unemployment_Rate_Pct), 1) AS Avg_Unemployment
+    FROM rural_data
+    GROUP BY State, District
+),
+Ranked_Districts AS (
+    -- Step 2: Rank the districts from worst to best, restarting the count for each State
+    SELECT 
+        State,
+        District,
+        Avg_Unemployment,
+        ROW_NUMBER() OVER (PARTITION BY State ORDER BY Avg_Unemployment DESC) AS State_Priority_Rank
+    FROM District_Stats
+)
+-- Step 3: Only show the top 3 worst districts per state
+SELECT * FROM Ranked_Districts 
+WHERE State_Priority_Rank <= 3;

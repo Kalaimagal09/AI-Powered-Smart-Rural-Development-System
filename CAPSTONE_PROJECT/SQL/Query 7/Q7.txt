@@ -1,0 +1,7 @@
+SELECT 
+    Village_Name AS Original_Name,
+    UPPER(REPLACE(Village_Name, '_', ' ')) AS Standardized_Name,
+    District,
+    State
+FROM rural_data
+LIMIT 15;

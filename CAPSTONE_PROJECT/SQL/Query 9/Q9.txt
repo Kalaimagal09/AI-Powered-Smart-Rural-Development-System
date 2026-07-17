@@ -1,0 +1,8 @@
+SELECT 
+    State,
+    ROUND(AVG(Internet_Penetration_Pct), 1) AS Avg_Internet,
+    ROUND(AVG(Electrification_Pct), 1) AS Avg_Electricity
+FROM rural_data
+GROUP BY State
+HAVING AVG(Internet_Penetration_Pct) < 50
+ORDER BY Avg_Internet ASC;

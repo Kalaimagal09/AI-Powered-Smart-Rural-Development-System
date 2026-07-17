@@ -1,0 +1,12 @@
+SELECT 
+    e.Village_Name,
+    e.District,
+    e.Year,
+    e.MGNREGA_Workers,
+    e.Unemployment_Rate_Pct,
+    i.Electrification_Pct,
+    i.Internet_Penetration_Pct
+FROM employment e
+JOIN infrastructure i 
+    ON e.Village_ID = i.Village_ID 
+    AND e.Year = i.Year;

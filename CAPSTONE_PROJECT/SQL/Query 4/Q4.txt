@@ -1,0 +1,6 @@
+SELECT 
+    State,
+    SUM(MGNREGA_Workers) AS Total_MGNREGA_Workers
+FROM rural_data
+GROUP BY State
+ORDER BY Total_MGNREGA_Workers DESC;

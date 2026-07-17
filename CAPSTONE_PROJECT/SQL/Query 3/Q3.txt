@@ -1,0 +1,6 @@
+SELECT 
+    Village_Name,
+    District,
+    Crop_Yield_MT_per_Hec
+FROM rural_data
+WHERE Crop_Yield_MT_per_Hec < (SELECT AVG(Crop_Yield_MT_per_Hec) FROM rural_data);

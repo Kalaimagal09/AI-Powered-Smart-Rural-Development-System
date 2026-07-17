@@ -1,0 +1,12 @@
+SELECT 
+    District,
+    State,
+    Unemployment_Rate_Pct,
+    CASE 
+        WHEN Unemployment_Rate_Pct >= 15 THEN 'High Poverty Area'
+        WHEN Unemployment_Rate_Pct >= 8 AND Unemployment_Rate_Pct < 15 THEN 'Medium Poverty Area'
+        ELSE 'Low Poverty Area'
+    END AS Poverty_Category
+FROM rural_data
+ORDER BY Unemployment_Rate_Pct DESC
+LIMIT 20;

@@ -1,0 +1,17 @@
+WITH Internet_Growth AS (
+    SELECT 
+        District,
+        Year,
+        AVG(Internet_Penetration_Pct) AS Current_Internet,
+        LAG(AVG(Internet_Penetration_Pct)) OVER (PARTITION BY District ORDER BY Year) AS Prev_Internet
+    FROM rural_data
+    GROUP BY District, Year
+)
+SELECT 
+    District,
+    Year,
+    Current_Internet,
+    Prev_Internet,
+    (Current_Internet - Prev_Internet) AS Growth_Amount
+FROM Internet_Growth
+WHERE Current_Internet > Prev_Internet;
